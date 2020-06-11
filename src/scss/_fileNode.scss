@@ -1,0 +1,23 @@
+.folder {
+    color: gold;
+    cursor: pointer;
+    display: inline-block;
+   
+    
+    &::before {
+        content: '▶' 
+    }
+    &.open::before {
+        content: '▼'
+    }
+    &__name {
+        color: red;
+        display: inline-block;
+         &::before {
+        content: '📁' 
+        }
+        &.open::before {
+        content: '📁'
+        }   
+    }  
+}
